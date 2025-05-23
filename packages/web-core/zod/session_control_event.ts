@@ -120,6 +120,7 @@ export type PlayerField = z.infer<typeof PlayerFieldSchema>;
 
 export const HistoryItemSchema = z.object({
     "actor": ActorSchema.optional(),
+    "talker_display_name": z.string().optional(),
     "text": z.string().optional(),
 });
 export type HistoryItem = z.infer<typeof HistoryItemSchema>;

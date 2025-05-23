@@ -164,6 +164,7 @@ export type Agent = z.infer<typeof AgentSchema>;
 
 export const HistoryItemSchema = z.object({
     "actor": ActorClassSchema.optional(),
+    "talker_display_name": z.string().optional(),
     "text": z.string().optional(),
 });
 export type HistoryItem = z.infer<typeof HistoryItemSchema>;

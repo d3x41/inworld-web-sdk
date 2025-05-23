@@ -455,6 +455,7 @@ export type Continuation = {
 export type DialogHistoryHistoryItem = {
   actor?: Actor
   text?: string
+  talkerDisplayName?: string
 }
 
 export type DialogHistory = {
